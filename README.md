@@ -31,6 +31,9 @@ Dear valued customer,                      ← or "Dear Valued Customer," / "Dea
     • Single issue: descriptive subtitles
       (e.g. "Stamp duty treatment", "Person liable to pay", "Whether the agreement needs to be submitted for stamping")
     • State the rule → cite the authority (Item / section / guideline para / media release / case) → apply to facts → conclusion
+    • Use the wording of the Act / guideline, not own words or judgement (see A6)
+    • Explain only the treatment the facts point to; for the alternative, state only that
+      "the treatment would be different" (see A7)
     • Point form only for conditions, factors, steps; prose elsewhere
     • Tables for: rates by scenario, multi-tier contracts, timelines, Item 22(1)(a) vs (b)
 
@@ -100,6 +103,63 @@ Thank you.
 **(b) Multi-question enquiry** — number 1, 2, 3…, repeat each question as a bold subtitle, answer each in 2–6 short paragraphs, single disclaimer at the end.
 
 **(c) Calculation check** — confirm the arithmetic, then state the conditions it depends on (exchange rate date, remission eligibility, Item classification), then the deadline.
+
+### A6. Consultant stance — use technical wording, not own words or judgement
+We answer as a consultant who **does not know the client's full company scenario**. The answer must not read as a judgement on the client's business or document. Describe the treatment in the terms used by the Stamp Act 1949, the First Schedule and HASiL guidelines, and tie every conclusion to the **instrument** and its **terms**, not to what we think the client does.
+
+| Do not write (own words / judgement) | Write instead (technical wording) |
+|---|---|
+| "based on what it actually does" | "based on the **substance** of the instrument" |
+| "what it is called" / "its name" | "its **title**" |
+| "what the document really is" | "the **nature and legal effect** of the instrument" |
+| "the deal" / "the arrangement you have" | "the **transaction** evidenced by the instrument" |
+| "signed" / "the date you signed" | "**executed**" / "the **date of execution**" |
+| "the paperwork" / "the contract stuff" | "the **instrument(s)**" / "the **related documents**" |
+| "who pays" | "the **person liable** to pay the stamp duty under the Third Schedule" |
+| "the main document" | "the **principal instrument**" (s.4(3)) |
+| "the price" / "how much it's worth" | "the **consideration**" / "the **contract value**" / "the **market value**" |
+| "your crane is stock" / "you're a trader" | "where the goods are **trading goods** of the seller" |
+| "this looks like a service contract to us" | "where the instrument **constitutes** a service agreement" |
+| "we think you're fine" / "you don't need to worry" | "the instrument **may qualify** for the exemption under …" |
+| "it's basically an agreement" | "the instrument **may be regarded as** an agreement under Item 4" |
+| "you should just stamp it to be safe" | "parties **may consider** submitting the instrument for **adjudication**" |
+| "the tax office" / "the government" | "HASiL / LHDN / IRBM" / "the Collector of Stamp Duties" |
+
+Rules of thumb:
+- Phrase facts as **conditions**, not conclusions about the client: *"Where the agreement provides for…"*, *"If the instrument creates legally binding rights and obligations…"*, *"Provided that the service obligations are ancillary to the sale…"*.
+- Assumptions are written as the conditions the treatment relies on — never as an assessment of the client's business.
+- Do not add commentary, opinions on commercial choices, or reassurance. State the treatment, the authority and the condition.
+- Use the same terms as the cited provision (e.g. "goods, wares or merchandise", "definite and certain period", "obligor", "conveyance on sale").
+
+### A7. One-direction rule — explain only the treatment the facts point to
+If the scenario points (even slightly) to **Direction A**, explain **only how the treatment under Direction A works** (Item, rate, person liable, conditions, stamping/endorsement). For anything that would take it out of Direction A, state **only that the treatment would be different** — do **not** explain Direction B (its Item, rate or computation).
+
+Structure:
+1. Assumption that places the instrument in Direction A.
+2. Treatment under Direction A — Item, authority, rate/exemption, conditions, person liable, deadline.
+3. One sentence: *"Where [condition of Direction A] is not met, the stamp duty treatment would be different."*
+4. (Optional) Recommendation: review of the actual instrument / adjudication.
+
+**Example — crane supply agreement (facts point to sale of goods):**
+> *Stamp duty treatment*
+> Under Item 4 of the First Schedule to the Stamp Act 1949, an agreement or memorandum of agreement is subject to stamp duty of RM10, except an agreement *"for or relating to the sale of any goods, wares or merchandise other than a hire-purchase agreement."* Where the crane constitutes trading goods of the seller and the design, installation and commissioning obligations are ancillary to the sale, the agreement may qualify for the exemption under paragraph (a) of the Exemptions to Item 4. Pursuant to HASiL's media release dated 7 August 2026, instruments under the "Exemptions" category of the First Schedule do not require stamping or endorsement.
+>
+> Where the agreement is not an agreement for or relating to the sale of goods based on the substance of the instrument, the stamp duty treatment would be different.
+
+✗ **Do not** go on to explain Item 22(1)(a), the 0.5% / 0.1% rates or the lump-sum service-value issue in this answer.
+
+**Other quick examples**
+| Facts point to | Explain | Close with |
+|---|---|---|
+| Accepted quotation with detailed T&Cs for a tenancy | Item 49(a) treatment, rate by term, lessee liable, 30-day deadline | "Where the quotation does not constitute a binding lease or agreement for lease, the treatment would be different." |
+| Fixed-term service agreement with ascertainable fee | Item 22(1)(a), 0.1% under P.U.(A) 428/2021, conditions, service recipient liable | "Where the total amount payable or the period cannot be ascertained, the treatment would be different." |
+| Employment offer letter, wages ≤ RM3,000 | Item 4 exemption; no stamping/endorsement (7 Aug 2026 release) | "Where the monthly wages exceed RM3,000, the treatment would be different." |
+| Sub-contract under a stamped private main contract | RM50 cap under P.U.(A) 428/2021 and the disclosure conditions | "Where the conditions are not met, the treatment would be different." |
+| Instrument executed in 2024 (PKPS) | PKPS 2026 automatic penalty remission, pay by 31 Dec 2026 | "Where the instrument was executed outside 1 Jan 2023 – 31 Dec 2025, the treatment would be different." |
+
+Only explain both directions where the client **expressly asks** about both (e.g. "what if it is treated as a service agreement?") — then answer the question asked, still in technical wording.
+
+> **Note on Part B:** Part B sets out both directions for reference when drafting. When writing the answer, apply A6 and A7 — use only the part that matches the facts.
 
 ---
 
