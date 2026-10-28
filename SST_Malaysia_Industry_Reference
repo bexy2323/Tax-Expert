@@ -1,0 +1,314 @@
+---
+doc_type: sst-agent-primary-reference
+agent: sst-expert
+authority: index-and-first-stop
+owner: YYC taxPOD
+last_updated: 2026-10-28
+---
+
+# AGENT INSTRUCTIONS — READ THIS BLOCK FIRST
+
+**You (the SST-expert AI agent) MUST use this document as your primary knowledge source for every client question on Malaysian SST.** Do NOT open and read every PDF in the library before answering. Follow this workflow instead:
+
+1. **Scan this file first.** Use the Table of Contents (Section 0 Framework, Section 1 Sales Tax, Section 2 Service Tax by industry 2.1–2.21, Section 3 Refund/Drawback, Section 4 Public Rulings, Section 5 SST-02, Section 6 Quick-decision checklist, Section 7 Citation style). The answer to the vast majority of client questions — rate, threshold, scope, reliefs, trigger, applicable STP/DCP/PR and effective date — is already here.
+2. **Only open the underlying PDF when:**
+   - The client question needs a **specific paragraph number, exact scope wording, worked example, or table** that this compendium does not reproduce verbatim; OR
+   - This compendium flags a point as "verify against guide"; OR
+   - The client transaction straddles an **amendment effective date** and you need to confirm which version was in force; OR
+   - The question is **novel** (not covered in Sections 2.1–2.21) or involves a **category not listed** in Section 0.3.
+3. **When you do open a PDF, open only the specific file linked from this compendium** — not the whole folder, not sibling versions. The latest-dated file is already flagged in each section.
+4. **Citation discipline (Section 7).** After consulting this file + at most one PDF, cite in the YYC taxPOD house format:
+   > *(Source: RMCD [short-title] [version/date], para X.Y — `path/to/file.pdf`)*
+   If the answer rests on this compendium alone (e.g. threshold, rate, Group letter), you may cite:
+   > *(Source: SST Industry Reference Compendium, YYC taxPOD, section 2.X — `_Reference/SST_Malaysia_Industry_Reference.md`)*
+   and only drill into the PDF when the client asks for the underlying paragraph.
+5. **Freshness check.** This file carries `last_updated` in the frontmatter. If the client transaction date is **after** `last_updated`, warn the client that a newer RMCD amendment may have superseded the position and offer to check the specific PDF.
+6. **What NOT to do:**
+   - Do not run `Glob` or `Grep` across the whole `!!SST/` tree for routine questions.
+   - Do not read `SST-02 Old Copy.pdf`, superseded guide versions, or any file not linked from this compendium — they are archival.
+   - Do not fabricate a paragraph number. If this compendium does not have the paragraph and the question needs one, open the PDF named in the relevant section.
+7. **Keep this file alive.** When RMCD gazettes a new STP/DCP/PR or a new industry guide version, update this file (new row, new link, bump `last_updated`), then archive the superseded PDF.
+
+---
+
+# Malaysian SST — Industry Reference Compendium
+**Prepared by:** YYC taxPOD — Senior SST Consultant desk
+**As of:** 28 October 2026
+**Scope:** Sales Tax Act 2018 (ACJ 2018) + Service Tax Act 2018 (ACP 2018), their regulations, RMCD Panduan Industri, Sales Tax Policies (STP), Service Tax Policies, Dasar Cukai Perkhidmatan (DCP), and Public Rulings 2025–2026.
+
+> Navigation + quick-reference. Each row cites the authoritative PDF in the local library. Always confirm against the latest-dated guide before advising a client.
+
+---
+
+## 0. Framework at a glance
+
+### 0.1 Two parallel regimes
+| Pillar | Legislation | Scope | Rates |
+|---|---|---|---|
+| Sales Tax | Sales Tax Act 2018 + Sales Tax Regulations 2018 + Sales Tax (Rates of Tax) Orders | Single-stage tax on taxable goods manufactured in Malaysia or imported | 5%, 10% default; petroleum specific; 0% for Schedule A exempt |
+| Service Tax | Service Tax Act 2018 + Service Tax Regulations 2018 (First Schedule Groups A–L) | Prescribed taxable services provided by a taxable person in Malaysia + imported taxable services + digital services | 6% (default), 8% (expanded 1-3-2024 for most services except F&B, telco, parking, logistics), credit card RM25/card/year |
+
+### 0.2 Expanded Service Tax (effective 1-7-2025)
+Extended service tax to rental/leasing of goods, construction works, private healthcare for non-citizens, education for non-citizens/high-fee, financial fee-based services; tightened B2B/intra-group rules. Transitional reliefs via STPs 2–6 of 2025, further amended into 2026.
+
+### 0.3 Registration thresholds (12-month historical or prospective)
+| Category | Threshold |
+|---|---|
+| Sales Tax — Manufacturer | RM 500,000 |
+| Service Tax — F&B (Group B) | RM 1,500,000 |
+| Service Tax — Rental/Leasing (Group K) | RM 1,000,000 (STP 4-2026) |
+| Service Tax — Construction (Group L) | RM 1,500,000 |
+| Service Tax — Private Healthcare | RM 1,500,000 (non-citizen revenue) |
+| Service Tax — Education (private higher ed, intl schools) | RM 1,500,000 |
+| Service Tax — All other taxable services | RM 500,000 |
+| Digital Services (FSP) | RM 500,000 |
+
+### 0.4 Cross-cutting mechanisms
+- **B2B exemption** — same taxable service re-supplied by one registered person to another registered person in the same prescribed group.
+- **Intra-group relief** — >=50% common holding; services provided to third parties <=5% of total value in 12 months (the "5% rule"). See CDE Panduan.
+- **CDE group election** — see Service Tax/CDE/Panduan Kumpulan CDE_4.9.25.pdf (latest).
+- **Disbursement vs reimbursement** — disbursement (pure agent, principal-third party contract, no mark-up) not subject; reimbursement subject at applicable rate.
+- **Imported taxable service (ITS)** — Malaysian recipient self-accounts in SST-02; applies to all businesses (carrying-on-business test).
+- **Exchange rate** — PR 1-2026 and PR 3-2026.
+
+---
+
+## 1. SALES TAX
+
+### 1.1 Registration & general operation
+- Guide: [Panduan Pendaftaran ACJ 2018 (6-mar-2026)](Sales%20Tax/Guideline/Panduan%20Pendaftaran%20Di%20Bawah%20ACJ%202018%20%286mar2026%29.pdf)
+- Manufacturer = transformation of materials by changing form, nature, or quality incl. mixing/assembling (ACJ 2018 s.3).
+- Trigger: taxable goods sold/used/disposed; invoice-basis or payment-basis.
+
+### 1.2 Schedule A, B, C exemptions
+- Guide: [Guide on Sales Tax Exemption Schedule A (Items 33A, 33B, 55, 63, 64, 65)](Sales%20Tax/Guideline/7.%20Guide%20on%20Sales%20Tax%20Exemption%20Under%20Item%20Schedule%20A%20%2833A%2C33B%2C55%2C63%2C64%2C%20and%2065%29.pdf)
+  - Item 33A — raw materials/components/packaging for approved manufacturers of specific exempt products
+  - Item 33B — raw materials for manufacturers whose finished goods are exempt
+  - Item 55 — goods for use in manufacture of goods for export
+  - Items 63/64/65 — specific industry reliefs
+
+### 1.3 Sales Tax Policies (STPs)
+| STP | Topic | Latest file | Effective |
+|---|---|---|---|
+| STP 1-2025 | Motorcycles | [EN Amd No.1 (27-10-25)](Sales%20Tax/Sales%20Tax%20Policies/2025/EN%20Sales%20Tax%20Policy%20No.1-2025%20MOTORCYCLES%20AMENDMENT%20No.1%20%2827-10-25%29.pdf) | 27-10-2025 |
+| STP 2-2025 | — | [27-09-25](Sales%20Tax/Sales%20Tax%20Policies/2025/Sales%20Tax%20Policy%20No.%202-2025%20%2827-09-25%29.pdf) | 27-9-2025 |
+| STP 3-2025 | — | [29-09-25](Sales%20Tax/Sales%20Tax%20Policies/2025/Sales%20Tax%20Policy%20No.%203-2025%20%2829-09-25%29.pdf) | 29-9-2025 |
+| STP 4-2025 | — | [10-10-25](Sales%20Tax/Sales%20Tax%20Policies/2025/Sales%20Tax%20Policy%20No.%204-2025%20%2810-10-25%29.pdf) | 10-10-2025 |
+| STP 1-2026 | — | [Amd No.1 (22-06-26)](Sales%20Tax/Sales%20Tax%20Policies/2026/EN%20Sales%20Tax%20Policy%20No.1-2026%20Amendment%20No.%201%2822-06-26%29.pdf) | 22-6-2026 |
+| STP 2-2026 | Reimportation of Malaysian goods | [FINAL (05-05-26)](Sales%20Tax/Sales%20Tax%20Policies/2026/Sales%20Tax%20Policy%20No.2-2026%20FINAL%2005.05.2026.pdf) | 5-5-2026 |
+| STP 3-2026 | Vessels exemption | [STP 3-2026](Sales%20Tax/Sales%20Tax%20Policies/2026/STP%203-2026%20-%20Sales%20tax%20exemption%20on%20vessels.pdf) | — |
+
+### 1.4 Public Rulings — Sales Tax
+- PR 2-2026 — "Used or being used" test for drawback (s.40 ACJ 2018). [PR 2-2026](Public%20Ruling/2026/PR%202-2026%20-%20used%20or%20being%20used%20in%20sales%20tax%20drawback.pdf)
+- PR 1-2026, PR 3-2026 — Exchange rate (applies to sales tax imports & service tax).
+
+### 1.5 Industry poster
+- [EN Poster — Industri Perkayuan](EN-Poster-Industri-Perkayuan-2.png)
+
+
+---
+
+## 2. SERVICE TAX — INDUSTRY GUIDES
+
+Legend: Grp = First Schedule Group; Rate = ST rate; Thr = registration threshold.
+
+### 2.1 Advertising (Grp I)
+- Guide: [Advertising V4 (20220119)](Service%20Tax/Advertising/Guide%20on%20Advertising%20V4_20220119.pdf)
+- Rate: 8% · Thr: RM 500k
+- Scope: advertising services, media buying, creative, publishing. Non-taxable: services wholly outside Malaysia; export of advertising (benefit outside Malaysia).
+
+### 2.2 Brokerage & Underwriting (Grp G/H)
+- [Panduan Pembrokeran (29-12-2025) latest](Service%20Tax/Brokerage%20and%20Underwriting/Panduan%20Pembrokeran%2029.12.2025.pdf)
+- [Pembrokeran dan Penajajaminan (26-02-2024)](Service%20Tax/Brokerage%20and%20Underwriting/PANDUAN%20PERKHIDMATAN%20PEMBROKERAN%20DAN%20PENAJAJAMINAN%2026.2.2024.pdf)
+- Rate: 8% · Thr: RM 500k
+- Scope: stockbroking, futures, money, ship, commodity, insurance/takaful broking; underwriting fees.
+
+### 2.3 Construction Work Services (Grp L - new 1-7-2025)
+- EN: [Construction (17-03-2026)](Service%20Tax/Construction%20Service/Guide%20on%20Construction%20Work%20Services_english%2017032026.pdf) · BM: [Kerja Pembinaan](Service%20Tax/Construction%20Service/1.%20PANDUAN%20-%20PERKHIDMATAN%20KERJA%20PEMBINAAN%20%281%29.pdf)
+- Rate: 6% · Thr: RM 1,500,000
+- Scope: construction, extension, installation, repair, maintenance, improvement, demolition.
+- Reliefs: residential exempt; mixed developments pro-rated; pre-1-7-2025 non-reviewable contract relief; offshore/onshore under STP 5-2026; JMB/MC non-residential taxable under STP 3-2026.
+- Policy files:
+  - [STP 3-2025 base](Service%20Tax/Service%20Tax%20Policy/2025/STP%203-2025%20%28Construction%20Works%29.pdf)
+  - [Amd 1 (17-10)](Service%20Tax/Service%20Tax%20Policy/2025/STP%203-2025%20%28Construction%20Works%29%20%28Amendment%20No.%201%29%20%2817-10%29.pdf)
+  - [Amd 2 (31-12-2025)](Service%20Tax/Service%20Tax%20Policy/2025/STP%203-2025%20%28Construction%20Works%29%20%28Amendment%20No.%202%29%2031122025.pdf)
+  - [Amd 3 (30-01-2026) BM](Service%20Tax/Service%20Tax%20Policy/2025/STP%203-2025%20%28Construction%20Works%29%20%28Amendment%20No.%203%29%2030012026%20-%20BM.pdf)
+  - [STP 7-2025 (24-10)](Service%20Tax/Service%20Tax%20Policy/2025/STP%207-2025%20%28Construction%20Works%29%20%2824-10%29.pdf)
+  - [STP 2-2026 Completed Residential](Service%20Tax/Service%20Tax%20Policy/2026/Service%20Tax%20Policy%20No.%202-2026%20-%20Construction%20on%20Completed%20Residential%20Buildings%20%2818%20JUN%202026%29.pdf)
+  - [STP 5-2026 Offshore/Onshore](Service%20Tax/Service%20Tax%20Policy/2026/Service%20Tax%20Policy%20No.5-2026%20-%20Construction%20Work%20Services%20for%20Offshort%20and%20Onshore%20Facilities%20%2808-09-26%29.pdf)
+  - [STP 3-2026 JMB/MC Non-Residential](Service%20Tax/Service%20Tax%20Policy/2026/Service%20Tax%20Policy%20No.3-2026%20-%20Service%20tax%20treatment%20on%20Maintenance%20Charges%20and%20Sinking%20Fund%20for%20Non-Residential%20Premises-Buildings%20Charged%20by%20JMB%20or%20MC.pdf)
+
+### 2.4 Credit Card & Charge Card (Grp H)
+- Guide: [Kredit Kad dan Kad Caj (02-09-2024)](Service%20Tax/Credit%20card/Panduan%20Kredit%20Kad%20dan%20Kad%20Caj%20020924%20%282%29.pdf)
+- Rate: RM 25 per card/year (specific tax). Trigger: card issue / anniversary. Debit & prepaid excluded.
+
+### 2.5 Disbursement vs Reimbursement
+- Guide: [Disbursement & Reimbursement (15-09-2020)](Service%20Tax/Disbursement%20and%20Reimbursement/15092020%20Disbursement%20and%20Reimbursement.pdf)
+- Disbursement (pure agent, invoice in client name, exact pass-through) not subject.
+- Reimbursement subject at applicable rate.
+
+
+### 2.6 Education Services
+- BM: [Panduan Pendidikan](Service%20Tax/Education/3.%20PANDUAN%20%20-%20PERKHIDMATAN%20PENDIDIKAN.pdf)
+- Rate: 6% · Thr: RM 1,500,000
+- Taxable: international schools > RM 60k/year/student; private higher ed tuition for non-Malaysian citizens; private language/tuition/enrichment >threshold.
+- Not taxable: MOE-registered Malaysian national schools; disabled students; Malaysian citizens in private higher ed.
+- STPs: [4-2025 base](Service%20Tax/Service%20Tax%20Policy/2025/STP%204-2025%20%28Education%29.pdf) · [Amd 1 (24-7)](Service%20Tax/Service%20Tax%20Policy/2025/STP%204-2025%20%28Education%29%20%28Amendment%20No.%201%29%20%2824-7%29.pdf) · [Amd 2 (17-10)](Service%20Tax/Service%20Tax%20Policy/2025/STP%204-2025%20%28Education%29%20%28Amendment%20No.%202%29%20%2817-10%29.pdf)
+
+### 2.7 Electricity Delivery & Distribution
+- Latest: [V4 (16-04-2026)](Service%20Tax/Electricity%20Services/PERKHIDMATAN%20PENGHANTARAN%20DAN%20PENGAGIHAN%20ELEKTRIK%20V4%2016.04.2026.pdf)
+- Rate: 8% on delivery/distribution; residential first 600 kWh/month exempt.
+- STP 6-2026 [base](Service%20Tax/Service%20Tax%20Policy/2026/Service%20Tax%20Policy%20No.6-2026%20%28Penghantaran%20dan%20Pengagihan%20Elektrik%29%2001102026%20BM.pdf) · [Amd 1 (23-10-2026)](Service%20Tax/Service%20Tax%20Policy/2026/Service%20Tax%20Policy%20No.6-2026%20%28Amendment%20No.%201%29%20%28Penghantaran%20dan%20Pengagihan%20Elektrik%29%2023102026%20BM.pdf)
+
+### 2.8 Employment Services (Grp G)
+- Latest: [Pekerjaan V4 (09-06-2026)](Service%20Tax/Employment%20Service/%23removed%20Panduan%20Perkhidmatan%20Pekerjaan%20-%20V4%2009062026.pdf) · [EN (14-05-2024)](Service%20Tax/Employment%20Service/Guide%20on%20Employment%20Services%2014052024.pdf)
+- Rate: 8% · Thr: RM 500k
+- Scope: recruitment, headhunting, outsourcing, secondment, labour supply.
+- PR 5-2026 Secondment: [link](Public%20Ruling/2026/PR5-2026%20-%20Penetapan%20Maksud%20%20Penempatan%20Pekerja%20Secara%20Sementara%20%28Secondment%20Of%20Employees%29%20Bagi%20Perkhidmatan%20Pekerjaan.pdf).
+
+### 2.9 Financial Services (Grp H) - fee-based
+- Guides: [V2 (23-10-2025) LATEST](Service%20Tax/Financial%20Service/Guide%20On%20Financial%20Service%20%20-%20%20Version%202%20%2823-10-25%29.pdf) · [9-6-25 earlier](Service%20Tax/Financial%20Service/Financial%20Services%20%289-6-25%29.pdf) · [BM Kewangan](Service%20Tax/Financial%20Service/PANDUAN%20PERKHIDMATAN%20KEWANGAN%20%281%29.pdf)
+- Rate: 8% · Thr: RM 500k
+- Scope (post 1-7-2025): fee-based banking, Islamic, DFIs, remittance, forex, asset mgmt, custodian, trustee, nominee, corporate finance advisory. Interest/profit, Shariah financing margin, inter-bank, zakat, FX margin exempted.
+- STP 1-2025 base + 5 amendments:
+  - [Base](Service%20Tax/Service%20Tax%20Policy/2025/STP%201-2025%20%28Financial%29.pdf)
+  - [Amd 1 (28-8-2025)](Service%20Tax/Service%20Tax%20Policy/2025/STP%201-2025%20%28Financial%29%20%28Amendment%20No.%201%29%20%2828-8%29.pdf)
+  - [Amd 2 (17-9-2025)](Service%20Tax/Service%20Tax%20Policy/2025/STP%201-2025%20%28Financial%29%20%28Amendment%20No.%202%29%20%2817-9%29.pdf)
+  - [Amd 3 (17-10-2025)](Service%20Tax/Service%20Tax%20Policy/2025/STP%201-2025%20%28Financial%29%20%28Amendment%20No.%203%29%20%2817-10%29.pdf)
+  - [Amd 4 (1-4-2026)](Service%20Tax/Service%20Tax%20Policy/2025/STP%201-2025%20%28Financial%29%20%28Amendment%20No.%204%29%20%281-4-26%29.pdf)
+  - [Amd 5 (1-7-2026) current](Service%20Tax/Service%20Tax%20Policy/2025/STP%201-2025%20%28Financial%29%20%28Amendment%20No.%205%29%20%281-7-26%29.pdf)
+- PR 2-2025 refund route: [link](Public%20Ruling/2025/Public%20Ruling%20No.%20%202-2025%20TUNTUTAN%20PEMBAYARAN%20BALIK%20CUKAI%20PERKHIDMATAN%20DI%20BAWAH%20PERENGGAN%2034%283%29%28b%29.pdf).
+
+### 2.10 Healthcare - Private (Grp I)
+- Latest BM V3: [V3 (1-3-2026)](Service%20Tax/Healthcare%20Service/PINDAAN%20VERSI%203-%20PANDUAN%20PERKHIDMATAN%20JAGAAN%20KESIHATAN%20SWASTA%20%281mar2026%29.pdf) · [V2 (1-7-2025)](Service%20Tax/Healthcare%20Service/1.%20PINDAAN%20VERSI%202-%20PANDUAN%20PERKHIDMATAN%20JAGAAN%20KESIHATAN%20SWASTA%20%281jul2025%29.pdf)
+- Rate: 6% · Thr: RM 1,500,000 of non-Malaysian citizen patient revenue
+- Taxable: medical, dental, allied health, T&CM at private facility to non-citizens.
+- Not taxable: services to Malaysian citizens; government hospitals; foreign medical schemes routed via MOH-licensed facility (verify STP 6-2025).
+- STP 5-2025 evolution:
+  - [Base](Service%20Tax/Service%20Tax%20Policy/2025/STP%205-2025%20%28Private%20Healthcare%29.pdf) · [Amd 1 (24-7)](Service%20Tax/Service%20Tax%20Policy/2025/STP%205-2025%20%28Private%20Healthcare%29%20%28Amendment%20No.%201%29%20%2824-7%29.pdf) · [Amd 2 (23-10-2025)](Service%20Tax/Service%20Tax%20Policy/2025/STP%205-2025%20%28Private%20Healthcare%29%20%28Amendment%20No.%202%29%20%2823-10%29.pdf) · [Amd 3 (22-5-2026)](Service%20Tax/Service%20Tax%20Policy/2025/STP%205-2025%20%28Private%20Healthcare%29%20%28Amendment%20No.%203%29%20%2822-5%29.pdf) · [Amd 4 (17-8-2026)](Service%20Tax/Service%20Tax%20Policy/2025/STP%205-2025%20%28Private%20Healthcare%29%20%28Amendment%20No.%204%29%20%2817-8-2026%29.pdf)
+- [STP 6-2025 (23-10-2025)](Service%20Tax/Service%20Tax%20Policy/2025/STP%206-2025%20%28Private%20Healthcare%29%20%2823-10%29.pdf) — additional carve-outs.
+- [STP 1-2026 Health Screening](Service%20Tax/Service%20Tax%20Policy/2026/Service%20Tax%20Policy%20No.1-2026%20-%20Service%20tax%20treatment%20for%20health%20screening%20management%20services.pdf).
+
+### 2.11 Hire Passenger Vehicle (Grp J)
+- Latest: [Sewa Kenderaan Penumpang (3-9-2025)](Service%20Tax/Hire%20Passenger%20Vehicle/Panduan%20Perkhidmatan%20Sewa%20Kenderaan%20Penumpang%203.9.2025.pdf) · [V2](Service%20Tax/Hire%20Passenger%20Vehicle/Panduan%20Perkhidmatan%20Sewa%20Kenderaan%20Penumpang%20-V2.pdf)
+- Rate: 8% · Thr: RM 500k
+- Scope: hire-and-drive, chauffeur-driven, limousine. Excludes metered taxi, e-hailing (separate regime), public tour buses.
+
+### 2.12 Insurance & Takaful (Grp H)
+- Latest: [Insurans/Takaful V4 (19-06-2025)](Service%20Tax/Insurance/Panduan%20perkhidmatan%20insurans%20atau%20takaful%20Jun%202025%20V4%2019%20Jun%202025%20%281%29.pdf)
+- Rate: 8%. General insurance / takaful premium taxable except medical, education, personal accident for individuals. Life/family takaful not subject (except group riders). B2B exemption between registered insurers/reinsurers.
+
+### 2.13 IT Services (Grp G)
+- Latest: [IT V7 (26-02-2026)](Service%20Tax/IT%20Services/Panduan%20Perkhidmatan%20Teknologi%20Maklumat%20-%20V7%2026.02.2026%20%2811mar2026%29.pdf)
+- Rate: 8% · Thr: RM 500k
+- Scope: software dev/customisation, consulting, cloud (local), hosting, maintenance, system integration, IT outsourcing. Hardware supply & pre-packaged downloadable software (via FSP for cross-border) not covered.
+- B2B exemption applies between IT service providers.
+
+
+### 2.14 Logistics Services (Grp J)
+- Latest: [Logistik (06-06-2025)](Service%20Tax/Logistics%20Guidelines/Panduan%20Perkhidmatan%20Logistik%2006062025.pdf) and [05-04-2024](Service%20Tax/Logistics%20Guidelines/Panduan%20Perkhidmatan%20Logistik%2005042024.pdf)
+- Rate: 6 percent (logistics stayed at 6 percent); Thr: RM 500k
+- Scope: freight forwarding, warehousing, haulage, courier, customs agency, shipping agency, cold chain, port/airport cargo handling.
+- Reliefs: B2B exemption between logistics providers; export freight (sea/air out of MY) effectively zero-rated; transshipment and FCZ movements excluded; last-mile e-commerce courier below RM 500k exempt.
+
+### 2.15 Management Services (Grp G)
+- Latest EN: [Mgmt V5 (6-5-2026)](Service%20Tax/Management%20Services/Guide%20on%20Management%20Services%20%20V5%206.5.2026.pdf) and BM V4 at [18-7-2025](Service%20Tax/Management%20Services/Panduan%20Pengurusan%20V4%2018.7.2025%20%28BM%29.pdf)
+- Rate: 8 percent; Thr: RM 500k
+- Scope: project mgmt, property mgmt, event mgmt, HR mgmt, strata mgmt, head-office or parent-sister charges.
+- Not taxable: JMB or MC property mgmt for residential owners. STP 3-2026 makes JMB or MC charges for Non-Residential buildings taxable.
+
+### 2.16 Motor Vehicle Service or Repair (Grp I)
+- Latest: [MV V3 (10-6-2026)](Service%20Tax/Motor%20Vehicle%20Service%20or%20Repair/PERKHIDMATAN%20SERVIS%20AM%20ATAU%20PEMBAIKAN%20KENDERAAN%20BERMOTOR%20V3%2010.6.2026.pdf) and [EN 20211227](Service%20Tax/Motor%20Vehicle%20Service%20or%20Repair/Guide%20on%20Motor%20Vehicle%20Service%20or%20Repair%2020211227.pdf)
+- Rate: 8 percent; Thr: RM 500k
+- Scope: workshops (general and authorised), body and paint, tyre or battery fitment, periodic maintenance, warranty repair billed to insurer. Parts in a repair invoice attract ST on labour plus parts.
+
+### 2.17 Parking Services (Grp I)
+- Latest: [Parking (4-6-2026)](Service%20Tax/Parking%20Services/PANDUAN%20PERKHIDMATAN%20RUANG%20LETAK%20KENDERAAN%204jun2026.pdf) and [EN (29-02-2024)](Service%20Tax/Parking%20Services/Guidelines-for-Vehicle-Parking-Services%2029feb2024.pdf)
+- Rate: 6 percent (parking stayed at 6 percent); Thr: RM 500k
+- Not taxable: government building parking for government staff; residential strata parking bundled with service charge.
+
+### 2.18 Professional Services (Grp G)
+- Guide: [Professional Services (21-09-2021)](Service%20Tax/Professional%20Services/Guide%20on%20Professional%20Services%2020210921.pdf) base; interpret alongside expansion gazette.
+- Rate: 8 percent; Thr: RM 500k
+- Scope: legal, accounting or audit or tax, engineering, architecture, surveying, valuation, consultancy (mgmt, HR, business), training.
+- Intra-group relief available (5 percent rule). B2B exemption between the same prescribed Grp G services (e.g. tax consultant to tax consultant).
+
+### 2.19 Rental or Leasing of Goods (Grp K, new 1-7-2025)
+- Latest: [Sewaan or Pajakan (14-05-2026)](Service%20Tax/Rental%20Services/PANDUAN%20PERKHIDMATAN%20SEWAAN%20ATAU%20PAJAKAN%2014-05-2026.pdf) and [9-6-2025](Service%20Tax/Rental%20Services/PANDUAN%20-%20PERKHIDMATAN%20SEWAAN%20ATAU%20PAJAKAN%209-6-2025.pdf)
+- Rate: 8 percent; Thr: RM 1,000,000 (STP 4-2026)
+- Scope: rental or leasing of movable goods (machinery, equipment, vehicles, IT equipment, F and B equipment) and non-residential immovable property (commercial, industrial, retail, office).
+- Not taxable: residential housing, agricultural land, financial lease treated as sale, rental for use outside Malaysia.
+- STP 2-2025 evolution:
+  - [Base](Service%20Tax/Service%20Tax%20Policy/2025/STP%202-2025%20%28Rental%20or%20Leasing%29.pdf)
+  - [Amd 1 (24-7)](Service%20Tax/Service%20Tax%20Policy/2025/STP%202-2025%20%28Rental%20or%20Leasing%29%20%28Amendment%20No.%201%29%20%2824-7%29.pdf)
+  - [Amd 2 (17-10)](Service%20Tax/Service%20Tax%20Policy/2025/STP%202-2025%20%28Rental%20or%20Leasing%29%20%28Amendment%20No.%202%29%20%2817-10%29.pdf)
+  - [Amd 3 (23-01-2026) BM](Service%20Tax/Service%20Tax%20Policy/2025/STP%202-2025%20%28Rental%20or%20Leasing%29%20%28Amendment%20No.%203%29%20%2823-01-26%29%20-%20BM.pdf)
+  - [Amd 4 (06-02-2026) BM](Service%20Tax/Service%20Tax%20Policy/2025/STP%202-2025%20%28Rental%20or%20Leasing%29%20%28Amendment%20No.%204%29%20%2806-02-26%29%20-%20BM.pdf)
+  - [Amd 5 (22-07-2026)](Service%20Tax/Service%20Tax%20Policy/2025/STP%202-2025%20%28Rental%20or%20Leasing%29%20%28Amendment%20No.%205%29%20%2822-07-26%29.pdf)
+- [STP 8-2025 (7-11-2025)](Service%20Tax/Service%20Tax%20Policy/2025/STP%208-2025%20%28Rental%20or%20Leasing%29%20%287-11%29.pdf)
+- [STP 4-2026 Threshold (22-07-2026)](Service%20Tax/Service%20Tax%20Policy/2026/Service%20Tax%20Policy%20No.4-2026%20-%20Determination%20of%20Threshold%20for%20Rental%20or%20Leasing%20%2822-07-26%29.pdf) confirms RM 1,000,000.
+
+### 2.20 CDE Group Relief (intra-group)
+- Latest: [CDE (4-9-2025)](Service%20Tax/CDE/Panduan%20Kumpulan%20CDE_4.9.25.pdf) and [9-6-2025](Service%20Tax/CDE/Panduan%20Kumpulan%20CDE_9.6.25%20%281%29.pdf)
+- 5-percent-of-value, 12-month test; eligible Grp G services; interaction with transfer pricing documentation.
+
+### 2.21 DCP 6-2024 transitional
+- [Pindaan No.1 (29-11-2024)](Service%20Tax/Service%20Tax%20Policy/2024/Pindaan%20No1%20DCP%206_2024%20%2829-11-24%29.pdf) and [Pindaan No.2 (7-11-2025)](Service%20Tax/Service%20Tax%20Policy/2024/DCP%20Bil.6-2024%20%28Pindaan%20No.2%29%20%287-11-25%29.pdf)
+
+---
+
+## 3. REFUND, DRAWBACK, REVIEW AND APPEAL
+- Latest: [Pembayaran Balik, Pulang Balik dan Rayuan V5 (25-06-2026)](Guideline/Refund%2C%20Drawbacks%20and%20Review/25062026%20Final%20Panduan%20Pembayaran%20Balik%20Pulang%20Balik%20dan%20Rayuan%20V5.pdf) and [Older (31-05-2021)](Guideline/Refund%2C%20Drawbacks%20and%20Review/31052021%20Panduan%20Pembayaran%20Balik_Pulang%20Balik%20dan%20Rayuan.pdf)
+- Core sections:
+  - ACJ 2018 s.39 refund of overpaid sales tax
+  - ACJ 2018 s.40 drawback on re-export (see PR 2-2026 used-or-being-used)
+  - ACJ 2018 s.41 remission
+  - ACP 2018 s.34 refund of overpaid service tax; s.34(3)(b) via PR 2-2025
+  - ACP 2018 s.38 bad-debt refund (6 years, strict conditions)
+  - Review: s.96 ACJ or s.81 ACP; Appeal to Customs Appeal Tribunal within 30 days.
+
+---
+
+## 4. PUBLIC RULINGS INDEX
+
+- PR 1-2025: [link](Public%20Ruling/2025/Public%20Ruling%20No.%201-2025.pdf)
+- PR 2-2025 Service Tax Refund under s.34(3)(b) ACP 2018: [link](Public%20Ruling/2025/Public%20Ruling%20No.%20%202-2025%20TUNTUTAN%20PEMBAYARAN%20BALIK%20CUKAI%20PERKHIDMATAN%20DI%20BAWAH%20PERENGGAN%2034%283%29%28b%29.pdf)
+- PR 1-2026 Exchange Rate: [link](Public%20Ruling/2026/PR1-2026%20-%20Exchange%20Rate.pdf)
+- PR 2-2026 Used or being used Sales Tax Drawback: [link](Public%20Ruling/2026/PR%202-2026%20-%20used%20or%20being%20used%20in%20sales%20tax%20drawback.pdf)
+- PR 3-2026 Exchange Rate Foreign Transactions (03-08-2026): [link](Public%20Ruling/2026/PR3-2026%20-%20Exchange%20Rate%20for%20Foreign%20Transaction%2003.08.2026.pdf)
+- PR 5-2026 Secondment of Employees: [link](Public%20Ruling/2026/PR5-2026%20-%20Penetapan%20Maksud%20%20Penempatan%20Pekerja%20Secara%20Sementara%20%28Secondment%20Of%20Employees%29%20Bagi%20Perkhidmatan%20Pekerjaan.pdf)
+- PR 6-2026 Forms, Returns, Applications and Payment Modes: [link](Public%20Ruling/2026/PR6-2026%20-%20Borang%2C%20Penyata%2C%20Cara%20Permohonan%20dan%20Kaedan%20Bayaran.pdf)
+
+---
+
+## 5. SST-02 RETURN
+- Latest form: [SST-02 Amendment (27-8-2025)](SST%2002%20Form/BORANG%20SST-02%20AMENDMENT%202025%20-%2027.8.2025.pdf)
+- Service Tax SST-02: [Latest](SST%2002%20Form/Latest%20SST-02%20Service%20Tax1.pdf)
+- Manual EN: [10-09-2025](SST%2002%20Form/Guideline/Guidelines-on-SST-02-Return-%28Manual-Submission%29-2025.09.10.pdf)
+- Manual BM: [31-05-2026](SST%2002%20Form/Guideline/Panduan%20Mengisi%20Penyata%20SST-02%20%28Manual%20%26%20Pindaan%29%20-%20BM%20%282026-05-31%29%29.pdf)
+- Cycle: bi-monthly, due last day of following month. Payment-basis election (s.26A ACP; s.26 ACJ). Imported Taxable Service self-accounted in SST-02.
+
+---
+
+## 6. QUICK-DECISION CHECKLIST FOR A NEW ENGAGEMENT
+
+1. Identify Group: F and B B, Hotel A, Logistics J, Hire Vehicle J, Rental K, Construction L, Grp G (professional, mgmt, IT, employment, brokerage), Grp H (financial, insurance, credit card), Grp I (healthcare, parking, MV, advertising).
+2. Threshold test: 500k or 1m or 1.5m; 12-month rolling.
+3. Rate: 6 percent or 8 percent per Rate Order.
+4. Reliefs: B2B exemption, intra-group (5 percent rule or CDE), non-reviewable contract, residential carve-out, export of service.
+5. Trigger date: invoice OR payment, whichever earlier; payment-basis election.
+6. Imported Taxable Service: foreign vendor billing the client? Self-account.
+7. Record-keeping: 7 years, bilingual, in Malaysia.
+8. Return: bi-monthly SST-02; late payment penalty 10 or 15 or 15 percent (6-month tiers), max 40 percent.
+
+---
+
+## 7. CITATION STYLE (YYC taxPOD house)
+
+(Source: RMCD Panduan Perkhidmatan Kewangan V2, 23-10-2025, para X.Y, Service Tax/Financial Service/Guide On Financial Service - Version 2 (23-10-25).pdf)
+
+Always include: short-title, version or date, paragraph, local path. For Policies cite STP number plus amendment number plus effective date.
+
+---
+
+End of compendium. Keep under revision; update whenever RMCD gazettes a new amendment or releases a new industry guide. Move superseded files into an _archive subfolder to prevent accidental citation.
